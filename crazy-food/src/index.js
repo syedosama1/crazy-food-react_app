@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense,lazy } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import AppLayout from "./App";
@@ -6,9 +6,11 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import About from "./component/About";
 import Error from "./component/Error";
 import RestaurantMenu from "./component/RestaurantMenu";
-import Body from "./component/Body";
-import { Provider } from "react-redux";
-import store from "./utiles/store";
+// import Body from "./component/Body";
+import Cart from "./component/Cart"
+import Login from "./component/Login";
+import SignUp from "./component/SignUp";
+const Body = lazy(()=> import("./component/Body"))
 
 const appRouter = createBrowserRouter([
   {
@@ -19,36 +21,47 @@ const appRouter = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+        
         children: [
-          {
-            path: "profile",
-            // element: <Profile />,
-          },
+          // {
+          //   path: "/cart",
+          //   element: <Cart />,
+          // },
         ],
       },
       {
         path: "/",
-        element: <Body />,
+        element:(
+          <Suspense fallback={"Loading................"}>
+            <Body />
+          </Suspense>
+
+        ) 
       },
-   
+
       {
         path: "/restaurant/:resId",
         element: <RestaurantMenu />,
       },
-     
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
     ],
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-
-  <RouterProvider router={appRouter}>
-  <Provider store={store}>
-  <AppLayout />
-  </Provider>
-  </RouterProvider>
+    <RouterProvider router={appRouter}>
+      <AppLayout />
+    </RouterProvider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

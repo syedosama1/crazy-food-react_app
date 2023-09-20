@@ -1,7 +1,7 @@
 import RestaurantCards from "../component/RestaurantCards";
 import { useEffect, useState } from "react"; /* This is named export */
 import Shimmer from "./Shimmer"; /* This is default export */
-import { swiggy_api_URL } from "../utiles/constants";
+import { swiggy_api_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 
 // Filter the restaurant data according input type
@@ -47,16 +47,16 @@ const Body = () => {
     <Shimmer />
   ) : (
     <>
-      <div className=" flex justify-center py-2 my-4  ">
+      <div className=" flex justify-center py-2 my-4 ">
         <div>
           <input
-            className=" max-w-7xl rounded-lg"
+            className="mr-3  rounded-lg shadow appearance-none border border-red-500  max-w-3xl py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
             placeholder="Search Restaurants"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
           <button
-            className="  bg-purple-400 hover:bg-sky-950 text-white rounded-lg "
+            className="bg-red-900 hover:bg-gray-100 text-cyan-50 font-semibold py-2 px-4  rounded-lg border-gray-400  shadow"
             variant="contained"
             color="primary"
             onClick={() => {

@@ -1,4 +1,4 @@
-import { CDN_URL } from "../utiles/constants";
+import { CDN_URL } from "../utils/constants";
 
 const RestaurantCards = ({
   cloudinaryImageId,
@@ -8,7 +8,7 @@ const RestaurantCards = ({
   areaName,
 }) => {
   return (
-    <div className="w-56 max-h-fit m-2 p-2  transition duration-300 ease-in-out hover:scale-110  rounded-xl shadow-lg">
+    <div className="w-full max-w-56 sm:w-56 h-auto m-2 p-2 transition duration-300 ease-in-out hover:scale-110 rounded-xl shadow-lg">
       <img
         className="w-[300px] h-[150px] rounded-xl"
         src={CDN_URL + cloudinaryImageId}

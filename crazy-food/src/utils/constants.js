@@ -12,3 +12,4 @@ export const MENU_URL =
 
 
   export const FOOD_ITEM_IMG_URL= "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/"
+  export const LOGIN_PAGE_IMAGE ="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
