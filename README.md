@@ -1,5 +1,11 @@
 # crazy-food-react_app
-It looks like you've provided an overview of a project called "Food-Studio" along with its tech stack and some improvements you want to make. Here are some suggestions on how to address the improvements and some general advice:
+# TechStack 
+Frontend Library: React JS
+Styling: Tailwind CSS
+Database: Firebase
+Bundler: Parcel
+Authentication: Firebase-Auth
+State Management: Redux Toolkit
 
 1. **Responsive Design for Mobile Phones**:
    - Utilize responsive design techniques to ensure that your application works well on mobile phones and other smaller screens. You may need to use media queries in your CSS to adjust the layout for different screen sizes.
