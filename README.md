@@ -1,4 +1,3 @@
-<img src="C:\Users\osama\OneDrive" alt="Crazy-food"/>
 
 # crazy-food-react_app
 # TechStack 
