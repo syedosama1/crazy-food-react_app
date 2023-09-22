@@ -1,3 +1,5 @@
+<img src="C:\Users\osama\OneDrive" alt="Crazy-food"/>
+
 # crazy-food-react_app
 # TechStack 
 Frontend Library: React JS
@@ -6,7 +8,6 @@ Database: Firebase
 Bundler: Parcel
 Authentication: Firebase-Auth
 State Management: Redux Toolkit
-<img src="C:\Users\osama\OneDrive" alt="Crazy-food"/>
 1. **Responsive Design for Mobile Phones**:
    - Utilize responsive design techniques to ensure that your application works well on mobile phones and other smaller screens. You may need to use media queries in your CSS to adjust the layout for different screen sizes.
 
