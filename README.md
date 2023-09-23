@@ -1,5 +1,9 @@
 
-# crazy-food-react_app
+# crazy-food-react
+![Crazy-food](https://github.com/syedosama1/crazy-food-react_app/assets/111410324/68242bee-d67b-46f7-9835-c3ae6ddd84e8)
+![Crazy-food-menu](https://github.com/syedosama1/crazy-food-react_app/assets/111410324/4fe5a5b9-471b-4af7-b93f-0e6848ebed85)
+
+_app
 # TechStack 
 Frontend Library: React JS
 Styling: Tailwind CSS
